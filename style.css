@@ -1,0 +1,162 @@
+
+@keyframes fadeIn {
+    from{
+        opacity : 0;
+    } to {
+        opacity : 1;
+    }
+}
+@font-face{
+ font-family: 'Roboto';
+ src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+ font-weight:400;
+ font-size:48px;
+ font-style:normal;
+}
+
+html, body, .basic{
+    height: 99%;
+    text-align:center;
+    color : white;
+    padding : 1px;
+    background-color:rgba(0,0,0,0.2);
+}
+
+ul{
+    list-style : none;
+    text-shadow: 1px 1px 1px black;
+}
+
+button{
+    background-color:transparent;
+    border:transparent;
+}
+
+.hidden{
+    display:none;
+
+}
+
+.bgImg{
+    position: absolute;
+    top:0;
+    left:0;
+    width : 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+#weather{
+    text-align: right;
+    font-family:'NanumGothic';
+    text-shadow: 1px 1px 1px black;
+    font-size:small;
+    font-weight:400;
+    z-index : 2;
+}
+
+#clock{
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 1px 1px 1px black;
+}
+
+#greeting{
+    font-size : 2rem;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+#quote{
+    line-height: 20px;
+    font-family:'NanumGothic';
+    font-size:small;
+    font-weight:400;
+    text-shadow: 1px 1px 1px black;
+    white-space:pre-line;
+    text-align-last : center;
+    z-index : 1;    
+}
+
+.todo-list{
+    text-align: right;
+    padding-right : 30%;
+}
+
+
+#login-form input{
+    padding-top:20px;
+    font-size:1.5rem;
+    color : white;
+    font-size : bold;
+    text-align : center;
+    background-color:transparent;
+    outline:none;
+    border-top : none;
+    border-left:none;
+    border-right:none;
+    border-bottom : 1px solid white;
+}
+#login-form input::placeholder{
+    color : white;
+    font-size: bold;
+    text-align:center;
+}
+
+#login-form input:focus{
+    text-align: center;
+}
+
+#todo-form input{
+    padding-top:20px;
+    font-size:1rem;
+    color : white;
+    font-size : bold;
+    text-align : center;
+    background-color:transparent;
+    text-shadow: 1px 1px 1px black;
+    outline:none;
+    border-top : none;
+    border-left:none;
+    border-right:none;
+    border-bottom : 1px solid white;
+}
+#todo-form input::placeholder{
+    color : white;
+    text-shadow: 1px 1px 1px black;
+    font-size: bold;
+    text-align:center;
+}
+
+
+.basic{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.weatherContainer{
+    grid-column: 3/3;
+    grid-row: 1/4;
+}
+
+.basicbox{
+    grid-column:2/3;
+    grid-row:2/4;
+
+}
+
+.quoteContainer{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+}
+
+.todo-box{
+    grid-column: 3/3;
+    grid-row: 4/6;
+    text-align:center;
+}
